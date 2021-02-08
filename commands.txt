@@ -1,0 +1,19 @@
+UniverseStore Commands File
+
+Player Commands:
+/store - Opens the in-game GUI store where players can make purchases.
+/storehistory - Lists all previous purchases the player has made to the store. (Personal)
+/storestats - Provides a list of all the stats, you can find a list of the possible stats in the messages.yml
+/store leaderboard - Provides a GUI leaderboard of the top donators using the store.
+
+Admin Commands:
+/storehistory <player> - Lists all previous purchases the player has made to the store.
+/storestats <player> - Provides a list of all the stats, you can find a list of the possible stats in the messages.yml
+/store blacklist <player/email> - Blacklist a player/email from using the store system.
+/store unblacklist <player/email> - Removes a active blacklist from a player/email.
+/store resetsetup <player> - Makes the player redo their setup, useful for people that get their IP lock stuck.
+/store forcesetup <player> - Forces a the player to do their store setup, this command is disabled if setup is disabled in config.yml
+/store addcredit <player> <amount> - Give the player free credit to purchase an item from the store.
+/store removecredit <player> <amount> - Remove free credit from a player, you cannot go below 0 credit.
+/store admin - Allows you to open a duplicate GUI that simply removes the payment, working as a test gui for the commands run on purchase.
+/store search <player> - Searches a players information that they entered in setup, this command is restricted to console only for safety.

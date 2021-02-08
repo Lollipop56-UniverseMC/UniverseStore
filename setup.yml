@@ -1,0 +1,156 @@
+#UniverseStore Setup File
+#This file contains the setup if enabled in the config.yml
+#Please note that this setup will include personal information that will be held in a database.
+
+#Setup GUI
+
+#GUI Actions - All actions happen upon clicking the material within the GUI
+#[close] - Closes the GUI and should the /store command be run again opens at the same place.
+#[cancel] - Cancels the setup and requires the player to start setup again on the /store command.
+#[accept] - Completes the setup stage and moves onto the next one.
+#[complete] - Completes the setup stage and does not process another GUI.
+#[message] - Sends the player a specifed message.
+#[broadcast] - Sends the entire server a message.
+
+#Stage 1 GUI
+setup-page: 1
+inventory: '&8Store Account: Setup #1'
+size: 36
+items:
+  Account-Lock:
+    material: BARRIER
+    slot: 13
+    hide_attributes: true
+    hide_enchantments: true
+    glow: true
+    display_name: ''
+    lore:
+      - ''
+    actions:
+      - '[close]'
+  Accept:
+    material: STAINED_GLASS_PANE
+    data: 5
+    slot: 21
+    hide_attributes: true
+    hide_enchantments: true
+    glow: true
+    display_name: ''
+    lore:
+      - ''
+    actions:
+      - '[accept]'
+  Reject:
+    material: STAINED_GLASS_PANE
+    data: 14
+    slot: 23
+    hide_attributes: true
+    hide_enchantments: true
+    glow: true
+    display_name: ''
+    lore:
+      - ''
+    actions:
+      - '[cancel]'
+      - '[message] &5&l&nSTORE&5&l » &7You have &c&orejected &7IP Locking your store account. You cannot continue without agreeing!'
+  Filler:
+    material: STAINED_GLASS_PANE
+    data: 7
+    slots:
+      - 0,1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,22,24,25,26,27,28,29,30,31,32,33,34,35
+
+#Stage 2 GUI
+setup-page: 2
+inventory: '&8Store Account: Setup #2'
+size: 36
+items:
+  TOS:
+    material: BOOK
+    slot: 13
+    hide_attributes: true
+    hide_enchantments: true
+    glow: true
+    display_name: ''
+    lore:
+      - ''
+    actions:
+      - '[close]'
+  Accept:
+    material: STAINED_GLASS_PANE
+    data: 5
+    slot: 21
+    hide_attributes: true
+    hide_enchantments: true
+    glow: true
+    display_name: ''
+    lore:
+      - ''
+    actions:
+      - '[accept]'
+  Reject:
+    material: STAINED_GLASS_PANE
+    data: 14
+    slot: 23
+    hide_attributes: true
+    hide_enchantments: true
+    glow: true
+    display_name: ''
+    lore:
+      - ''
+    actions:
+      - '[cancel]'
+      - '[message] &5&l&nSTORE&5&l » &7You have &c&orejected &7our &d&nTerms of Service&7. You cannot continue without agreeing!'
+  Filler:
+    material: STAINED_GLASS_PANE
+    data: 7
+    slots:
+      - 0,1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,22,24,25,26,27,28,29,30,31,32,33,34,35
+
+#Stage 3 GUI
+setup-page: 3
+inventory: '&8Store Account: Setup #3'
+size: 36
+items:
+  PayPal:
+    material: BOOK
+    slot: 13
+    hide_attributes: true
+    hide_enchantments: true
+    glow: true
+    display_name: ''
+    lore:
+      - ''
+    actions:
+      - '[close]'
+  Accept:
+    material: STAINED_GLASS_PANE
+    data: 5
+    slot: 21
+    hide_attributes: true
+    hide_enchantments: true
+    glow: true
+    display_name: ''
+    lore:
+      - ''
+    actions:
+      - '[complete]'
+      - '[close]'
+      - '[broadcast] &d&l{player} &7has setup their in-game store access, setup an account with our &d&o/store&7!'
+  Reject:
+    material: STAINED_GLASS_PANE
+    data: 14
+    slot: 23
+    hide_attributes: true
+    hide_enchantments: true
+    glow: true
+    display_name: ''
+    lore:
+      - ''
+    actions:
+      - '[cancel]'
+      - '[message] &5&l&nSTORE&5&l » &7You have &c&orejected &7use of &d&nPayPal&7. You can only continue using PayPal!'
+  Filler:
+    material: STAINED_GLASS_PANE
+    data: 7
+    slots:
+      - 0,1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,22,24,25,26,27,28,29,30,31,32,33,34,35

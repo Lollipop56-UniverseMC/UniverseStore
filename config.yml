@@ -1,0 +1,37 @@
+#UniverseStore plugin Configuration File.
+#Developed By: <name>
+#Congigured By: Lollipop56_#0001
+#All rights reserved to UniverseMC Inc. Distribution of this product can result in legal challenges/prosecution.
+
+#This plugin offers fully configurability over the store, multiple options.
+
+#PayPal Settings
+
+business-paypal: 'universemcoffical@yahoo.com'
+generate-invoice: true
+
+#Payment Settings
+
+Currency: 'USD' #You must provide a valid currency or the plugin will automatically disable to avoid errors.
+TOS: '' #Provide a link, using the placeholder, %store_tos% in the messages.yml will provide this link.
+
+#General Settings
+
+#This settings requires all users that use the in-game store to setup an account before purchase.
+#You can find the setup in the setup.yml, if you disable this section anyone will be-able to purchase.
+require-setup: true
+
+#This setting requires the user to have been playing the server a set amount of time before using the store.
+require-playtime: true
+#You can select the unit for playtime, the possible units are, SECONDS, MINUTES, HOURS, DAYS.
+unit: HOURS
+required-playtime: 6
+
+#This setting allows the playtime to countdown even while not moving, if false the player must be moving to countdown.
+allow-afk: true
+
+#This setting requires the user to have spoken in chat a set amount of times before using the store.
+require-chat: true
+#You can select the unit for chat, the possible units are, AMOUNT, CHARACTERS.
+unit: AMOUNT
+required-chat: 15
